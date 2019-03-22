@@ -2,3 +2,24 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+ion-content{
+  --background: url('../../assets/vd1.mp4');
+
+}
+
+.md-card-bg .md-card-subtitle,
+.md-card-bg .md-card-title {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    width: 100%;
+}
+
+.md-card-bg .md-card-title {
+    margin-top: -30px;
+}
+
+.md-card-bg .md-card-subtitle {
+    margin-top: 10px;
+}
