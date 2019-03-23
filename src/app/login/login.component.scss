@@ -3,11 +3,16 @@ ion-content{
     --background: url('../../assets/bg9.png');
 
 }
+ion-toolbar{
+    // --background: #8C1919;
+    --background: url('../../assets/bg9.png');
+    --color: #ffffff;
+}
 
 
 ion-item{
     --background: rgba(138, 37, 19, 0.534);
-    --color: #fff;
+    --color: #ffffff;
 }
 ion-button{
     --background: #3A0000;

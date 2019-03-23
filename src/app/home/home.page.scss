@@ -3,26 +3,26 @@
   overflow: hidden;
 }
 
+// ion-content{
+//   --background: url('../../assets/bg9.png');  
+
+// }
+ion-toolbar{
+  // --background: #8C1919;
+  --background: url('../../assets/bg9.png');
+  --color: #ffffff;
+}
+
 ion-content{
   --background: url('../../assets/vd1.mp4');
 
 }
 
-.md-card-bg .md-card-subtitle,
-.md-card-bg .md-card-title {
-    position: absolute;
-    top: 50%;
-    color: #fff;
-    width: 100%;
+.card ion-button{
+  float:left;
 }
 
-.md-card-bg .md-card-title {
-    margin-top: -30px;
-}
 
-.md-card-bg .md-card-subtitle {
-    margin-top: 10px;
-}
 
 .star ion-icon {
   font-size: 35px;
@@ -32,5 +32,5 @@ ion-content{
   font-size: 35px;
 }
 .rating p {
-  font-size: 20px;
+  font-size: 20px;padding-top:-15px;
 }

@@ -3,6 +3,12 @@ ion-content{
 
 }
 
+ion-toolbar{
+    // --background: #8C1919;
+    --background: url('../../assets/bg9.png');
+    --color: #ffffff;
+}
+
 ion-item{
     --background: rgba(26, 6, 3, 0.329);
     --color: #fff;

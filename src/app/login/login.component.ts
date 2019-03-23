@@ -23,10 +23,10 @@ export class LoginComponent implements OnInit {
     }
 
     
-    else{
+    else if(this.username!= this.password){
       this.presentAlert();
-      this.username = "";
-      this.password = "";
+      //alert("Hi");
+    
     }   
   }
 
@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     const alert = await this.alertController.create({
       header: 'Alert',
       subHeader: 'Hello',
-      message: 'username and password should be same.',
+      message: this.username,
       buttons: ['OK']
     });
 

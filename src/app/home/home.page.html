@@ -2,9 +2,10 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+    </ion-buttons>    
+    <ion-icon name="search" slot="end" size="large"></ion-icon>   
     <ion-title>
-      Home
+        <ion-img src="/assets/logo8.png"></ion-img>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,29 +14,138 @@
     <!-- <video autoplay muted loop id="myVideo">
         <source src="rain.mp4" type="video/mp4">
       </video> -->
+
+      <ion-slides pager="true" autoplay="1000" loop="true" speed="500" pager="true" #mySlider [options]="options" (ionSlidesDidLoad)="slideChanged(mySlider)">
+
+          <ion-slide>
+              <ion-card>
+                  <ion-card-header>
+                    <ion-img src="/assets/kesari.jpg"></ion-img>
+                    
+                  </ion-card-header>
+              </ion-card>
+          </ion-slide>          
+          <ion-slide>
+              <ion-card>
+                  <ion-card-header>
+                    <ion-img src="/assets/captain.jpg"></ion-img>
+                    
+                  </ion-card-header>
+              </ion-card>
+          </ion-slide>
+      
+          <ion-slide>
+              <ion-card>
+                  <ion-card-header>
+                    <ion-img src="/assets/badla.jpg"></ion-img>
+                    
+                  </ion-card-header>
+              </ion-card>
+
+          </ion-slide>
+
+        </ion-slides>
+
       <ion-card class="welcome-card">
           <ion-img src="/assets/raees.jpg"></ion-img>
-          <ion-card-header> 
-            <div text-right class="star" >            
+           
+            <ion-item>            
             <ion-icon name="star" ></ion-icon>
             <ion-icon name="star" ></ion-icon>
             <ion-icon name="star-half"></ion-icon>
             <ion-icon name="star-outline"></ion-icon>
-           </div>
-           <div class="rating">
-              <ion-icon name="heart" color="danger"></ion-icon><p>81%</p>
-           </div>
-            <ion-card-title>Raees</ion-card-title>
-            <ion-card-subtitle>UI | Mar 08,2019</ion-card-subtitle>
+            <ion-card-subtitle color="danger" slot="end">02 Mar,2019</ion-card-subtitle>
+           </ion-item>
+        <ion-item>
+            <ion-card-title size="large">Raees</ion-card-title>
+           
+          <ion-button icon="fa-rotate-left" slot="end">Book Ticket</ion-button> 
+        </ion-item>
+      </ion-card>
+
+   <ion-grid>
+      <ion-row>
+          <ion-col col-6>
+              <ion-item href="#" class="activated" >
+                  <ion-img src="/assets/jaan.jpg"></ion-img>                 
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap>
+                    <ion-text color="primary">
+                      <h2>Jab Tak Hai Jaan</h2>
+                    </ion-text>
+                    <p>08 Mar,2019</p>
+                    <ion-button expand="block">Book</ion-button>                    
+                </ion-label>
+             </ion-item>
             
-          </ion-card-header>
-          <ion-card-content>
-              <p>2 hrs 40 min</p>
-              <p>English,Hindi</p>
-          </ion-card-content>
-          <ion-button flat class="ion-align-left" icon="fa-rotate-left">Book Ticket</ion-button>
-        </ion-card>
+          </ion-col>
+          <ion-col col-6>
+              <ion-item href="#" >
+                  <ion-img src="/assets/khan.jpg"></ion-img>                 
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap>
+                    <ion-text color="primary">
+                      <h2>My Name Is Khan</h2>
+                    </ion-text>
+                    <p>07 Mar,2019</p>
+                    <ion-button expand="block">Book</ion-button>                    
+                </ion-label>
+             </ion-item>
+          </ion-col>          
+        </ion-row>
 
-   
+        <ion-row>
+            <ion-col col-6>
+                <ion-item href="#" >
+                    <ion-img src="/assets/swadesh.jpg" expand="block"></ion-img>                 
+                </ion-item>
+                <ion-item>
+                  <ion-label text-wrap>
+                      <ion-text color="primary">
+                        <h2>Swadesh</h2>
+                      </ion-text>
+                      <p>12 Mar,2019</p>
+                      <ion-button expand="block">Book</ion-button>                    
+                  </ion-label>
+               </ion-item>
+            </ion-col>
+            <ion-col col-6>
+                <ion-item href="#"  >
+                    <ion-img src="/assets/don2.jpg" expand="block"></ion-img>                 
+                </ion-item>
+                <ion-item>
+                  <ion-label text-wrap>
+                      <ion-text color="primary">
+                        <h2>Don 2</h2>
+                      </ion-text>
+                      <p>17 Mar,2019</p>
+                      <ion-button expand="block">Book</ion-button>                    
+                  </ion-label>
+               </ion-item>
+            </ion-col>          
+          </ion-row>
+   </ion-grid>
 
-</ion-content>
+   <ion-card class="welcome-card">
+      <ion-img src="/assets/raees.jpg"></ion-img>
+       
+        <ion-item>            
+        <ion-icon name="star" ></ion-icon>
+        <ion-icon name="star" ></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-card-subtitle color="danger" slot="end">02 Mar,2019</ion-card-subtitle>
+       </ion-item>
+
+    <ion-card-header>
+      <ion-card-content>  
+        <ion-card-title size="large">Raees</ion-card-title>
+        <ion-card-subtitle>2 hrs 40 min</ion-card-subtitle>
+       </ion-card-content> 
+      <ion-button icon="fa-rotate-left">Book Ticket</ion-button> 
+    </ion-card-header>
+  </ion-card>
+
+</ion-content >

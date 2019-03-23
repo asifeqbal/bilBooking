@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  slideChanged(slides){
+    slides.startAutoplay();
+  }
   
+  }
 
-}
+
+
